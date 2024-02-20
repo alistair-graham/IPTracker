@@ -15,13 +15,8 @@ Please create an ASP.NET web application with a single REST endpoint for retriev
 
 This information should be saved locally.
 
-Please use sensible abstractions, validation, and error handling for these components.
-
 Testing should be included as part of your solution.
 
+Please use sensible abstractions, validation, and error handling for these components.
+
 Once this is complete, create an endpoint for reporting data from the API.
-
-This should be a list of countries and the number of IP addresses that have been searched for that were associated with that country.
-
-You can use this free service for your IP address information:
-`https://ip-api.com/docs/api:json`
