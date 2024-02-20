@@ -1,0 +1,6 @@
+@Crezco_Interview_CSharp_HostAddress = http://localhost:5025
+
+GET {{Crezco_Interview_CSharp_HostAddress}}/minimal-api/
+Accept: application/json
+
+###
