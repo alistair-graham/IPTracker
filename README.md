@@ -11,7 +11,7 @@ Once complete the interviewer will ask you to push your code as a new branch. If
 
 ## The Task
 
-Please create an ASP.NET web application with a single REST endpoint for retrieving information about an IP address.
+Please create an ASP.NET web application to retrieve information about an IP address and report on our data. We will be pulling information about IP addresses into our application from a third party web service.
 
 This information should be saved locally.
 
