@@ -11,12 +11,12 @@ Once complete the interviewer will ask you to push your code as a new branch. If
 
 ## The Task
 
-Please create an ASP.NET web application to retrieve information about an IP address and report on our data. We will be pulling information about IP addresses into our application from a third party web service.
+Please create an ASP.NET web application to retrieve information about an IP address and report on our data. We will be pulling information about IP addresses into our application from a third party web service (this will be given at the start of the interview).
 
 This information should be saved locally.
 
-Testing should be included as part of your solution.
-
 Please use sensible abstractions, validation, and error handling for these components.
 
-Once this is complete, create an endpoint for reporting data from the API.
+Testing should be included as part of your solution.
+
+Once this is complete, we will create an endpoint for reporting data from the API.
