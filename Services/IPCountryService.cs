@@ -6,7 +6,7 @@ namespace Crezco_Interview_CSharp.Services
         private readonly HttpClient _httpClient;
         private readonly string SUCCESS_STATUS = "success";
 
-        public IPCountryService(HttpClient httpClient)
+        public IPCountryService(HttpClient httpClient, IIPCountryStorageService ipCountryStorageService)
         {
             _httpClient = httpClient;
         }
@@ -33,7 +33,7 @@ namespace Crezco_Interview_CSharp.Services
 
         public Task<string?> GetSummary()
         {
-            throw new NotImplementedException();
+
         }
     }
 }
