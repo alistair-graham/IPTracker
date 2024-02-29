@@ -1,10 +1,16 @@
+using Crezco_Interview_CSharp.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddHttpClient<IIPInformationService, IPCountryService>(client =>
+{
+    client.BaseAddress = new Uri("http://ip-api.com/json/");
+});
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
@@ -18,10 +24,6 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 // Use controllers
-// builder.Services.AddControllers();
-//app.MapControllers();
-
-// Use minimal APIs
-//app.MapGet("/minimal-api", () => 1);
+app.MapControllers();
 
 app.Run();
